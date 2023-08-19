@@ -1,0 +1,305 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* END RESET CSS */
+
+/* COMMON */
+html {
+    font-family: Verdana, sans-serif;
+}
+
+.text-dec {
+    text-decoration: none;
+    color: #000;
+}
+
+.clear {
+    clear: both;
+}
+/* END COMMON */
+
+header {
+    position: fixed;
+    z-index: 1;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    padding: 8px 16px;
+    width: 100%;
+}
+
+#nav {
+    /* background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    padding: 8px 16px;
+    width: 100%; */
+    /* position: fixed;
+    z-index: 1; */
+}
+
+#nav li {
+    display: flex;
+    list-style: none;
+    font-size: 15px;
+}
+
+#nav .nav-item-left {
+    float: left;
+}
+
+#nav .nav-item-left li {
+    padding: 8px 16px;
+    letter-spacing: 4px;
+}
+
+#nav .nav-item-left li:hover {
+    background: #ccc;
+    display: block;
+}
+
+#nav .nav-item-right {
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 4px;
+}
+
+#nav .nav-item-right li {
+    padding: 8px 16px;
+}
+
+#nav .nav-item-right li:hover {
+    background: #ccc;
+    display: block;
+}
+
+#sidebar {
+    background: url(/assets/img/sidebar1.jpg) left top / cover no-repeat;
+    padding-top: 50%;
+    position: relative;
+}
+
+#sidebar h1 {
+    position: absolute;
+    color: #f1f1f1; 
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    font-weight: 500;
+    font-size: 36px;
+}
+
+#sidebar .side-1 {
+    background: #000;
+    padding: 10px 12px;
+    opacity: 0.8;
+    letter-spacing: 3px;
+}
+
+#sidebar .side-2 {
+    letter-spacing: 3px;
+}
+
+#content .projects {
+    padding: 0 24px;
+}
+
+#content .project-item-head {
+    padding: 32px 8px;
+}
+
+#content .project-item-head h3 {
+   padding: 16px 0;
+   margin: 10px 0;
+   font-weight: 400;
+   font-size: 24px;
+}
+
+.projects-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.img-items {
+    width: calc(100% / 4);
+    height: auto;
+    padding: 8px 8px;
+    position: relative;
+}
+
+.projects .projects-img .texts {
+    position: absolute;
+    top: 8;
+    left: 8;
+    background: #000;
+    color: #fff;
+    padding: 8px 16px;
+}
+
+.about .section-head {
+    padding: 32px 24px;
+    padding-bottom: 50px;
+}
+
+.about .section-head h3 {
+    font-size: 24px;
+    font-weight: 400;
+    border-bottom: 1px solid #f1f1f1;
+    padding: 16px 0;
+    margin: 10px 0;
+}
+
+.about .section-head p {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.about .section-list-contact .section-imgs {
+    width: 25%;
+    padding: 0 8px;
+}
+
+.about .section-list-contact {
+    display: flex;
+    padding: 0 24px;
+}
+
+.section-list-contact .section-imgs .imgs-contact img {
+    -webkit-filter: grayscale(1);    
+    filter: grayscale(1);
+}
+
+.section-list-contact .section-imgs:hover img {
+    -webkit-filter: grayscale(0);    
+    filter: grayscale(0);
+    transition: all 0.25s linear;
+}
+
+.section-list-contact .section-imgs .text-contact h3 {
+    font-weight: 400;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.section-list-contact .section-imgs .text-contact .position-design {
+    opacity: 0.6;
+}
+
+.section-list-contact .section-imgs .text-contact p {
+    margin: 15px 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.section-list-contact .section-imgs button {
+    padding: 8px 16px;
+    width: 100%;
+    border: none;
+    background: #f1f1f1;
+    font-size: 17px;
+}
+
+.section-list-contact .section-imgs button:hover {
+    background: #ccc;
+    cursor: pointer;
+}
+
+.section-list-contact .section-imgs button a {
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+}
+
+#content .contact {
+    padding: 32px 24px;
+}
+
+.contact .text-head h3 {
+    border-bottom: 1px solid #f1f1f1;
+    padding: 16px 0;
+    margin: 10px 0;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.contact .text-head p {
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.contact .input-form .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin: 8px 0;
+    font-size: 17px;
+}
+
+.contact form .btn-submit {
+    background: #000;
+    color: white;
+    font-size: 15px;
+    margin: 18px 0;
+    padding: 8px 16px;
+    border: 1px solid #000;
+}
+
+.contact form .btn-submit:hover {
+    cursor: pointer;
+    background-color: #ccc;
+    color: #000;
+    border: 1px solid #ccc;
+    transition: all 0.25s linear;
+}
+
+.contact .img-cuoi {
+    margin-top: 28px;
+}
+
+.contact .img-cuoi img {
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+footer {
+    background: #000;
+    width: 100%;
+    padding: 16px 0;
+    margin-top: -24px;
+}
+
+footer .text-foot {
+    margin: 15px 0;
+    text-align: center;
+    color: white;
+}
+
+footer .text-foot a {
+    color: #fff;
+    font-size: 15px;
+}
+
+footer .text-foot a:hover {
+    color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

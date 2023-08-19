@@ -1,0 +1,33 @@
+@media (min-width: 1024px) {
+    .menu-mobile .ti-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .menu-mobile .ti-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 739px) {
+    #nav .nav-item-right {
+        display: block;
+        float: none;
+    }
+
+    #nav .nav-item-right li {
+        width: 100%;
+    }
+
+    .menu-mobile {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .menu-mobile .ti-menu {
+        display: block;
+        color: black;
+    }
+}
