@@ -71,7 +71,11 @@ header {
 }
 
 #sidebar {
+<<<<<<< HEAD
     background: url(../img/sidebar1.jpg) left top / cover no-repeat;
+=======
+    background: url(../assets/img/sidebar1.jpg) left top / cover no-repeat;
+>>>>>>> 37a3a0b54388173a5c7f39dde93a290b06d8314e
     padding-top: 50%;
     position: relative;
 }
