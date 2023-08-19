@@ -71,7 +71,7 @@ header {
 }
 
 #sidebar {
-    background: url(../img/sidebar1.jpg) left top / cover no-repeat;
+    background: url(/assets/img/sidebar1.jpg) left top / cover no-repeat;
     padding-top: 50%;
     position: relative;
 }
